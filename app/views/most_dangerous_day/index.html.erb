@@ -1,0 +1,9 @@
+Most Dangerous Day
+
+<%= @most_dangerous_day.start_date %> -
+<%= @most_dangerous_day.end_date %>
+
+<% @most_dangerous_day.asteroids.each do |asteroid| %>
+  Name: <%= asteroid.name %>
+  NEO Reference ID: <%= asteroid.ref_id %>
+<% end %>
